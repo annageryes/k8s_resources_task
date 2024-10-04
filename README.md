@@ -17,10 +17,16 @@ HW5 - full homework requirments can be found in task.md
 3- finish readme file 
 
 
-docker buildx build -t radicale_k8s:test . --build-arg USER=user2  --build-arg PASSWD=user2 --no-cache
-docker run radicale_k8s:test
+- run : kubectl create namespace radicale
+- sudo kubectl apply -f .
 
-    
+docker build & run commands :
+docker buildx build -t radicale_k8s:v1 . --build-arg USER=<username>  --build-arg PASSWD=<password> --no-cache
+docker run radicale_k8s:v1
+
+dockerhub image url: https://hub.docker.com/repository/docker/annageryes/radicale_k8s/general
+
+radicale url : http://localhost:5232/    
 
 
 
