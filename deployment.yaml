@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: radicale
-        image: tomsquest/docker-radicale:amd64
+        image: annageryes/radicale_k8s:v1
         imagePullPolicy: IfNotPresent
         ports:
         - name: dav
