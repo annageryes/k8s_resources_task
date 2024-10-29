@@ -24,6 +24,7 @@ part1:
     1. docker buildx build -t radicale_k8s:v1 . --build-arg USER=<username>  --build-arg PASSWD=<password> --no-cache
     2. docker run radicale_k8s:v1
     3. connect to radicale url : http://localhost:5232/    with the above user
+![image](https://github.com/user-attachments/assets/e110bf0b-82f1-45e5-a1b0-f5ed5291819e)
 
 part2:  
 - run : kubectl create namespace radicale
