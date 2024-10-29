@@ -7,11 +7,8 @@ HW5 - full homework requirments can be found in [task.md](task.md)
         - use lightweight (such as alpine)
         - expose ports
         - use env var to insert the credintials config
-    b- upload to dockerhub with proper tagging 
-
-            docker build & run commands :
-            docker buildx build -t radicale_k8s:<tag> . --build-arg USER=<username>  --build-arg PASSWD=<password> --no-cache
-            docker run radicale_k8s:<tag>
+    b- upload to dockerhub with proper tagging
+    
 2- deploy app in k3s
     a- write the multi file to run it in k3s , including:
         - deployment 
@@ -21,6 +18,14 @@ HW5 - full homework requirments can be found in [task.md](task.md)
 3- finish readme file 
 
 ## instructions:
+
+part1:
+- docker build & run commands :
+    1. docker buildx build -t radicale_k8s:v1 . --build-arg USER=<username>  --build-arg PASSWD=<password> --no-cache
+    2. docker run radicale_k8s:v1
+    3. connect to radicale url : http://localhost:5232/    with the above user
+
+part2:  
 - run : kubectl create namespace radicale
 - sudo kubectl apply -f .
 
